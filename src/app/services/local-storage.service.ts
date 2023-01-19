@@ -14,7 +14,7 @@ export class LocalStorageService {
   }
 
   getLocalStorage(name: string) {
-    return localStorage.getItem(name);
+    return JSON.parse(localStorage.getItem(name)!); 
   }
 
   deleteLocalStorage(name: string) {
@@ -32,25 +32,29 @@ export class LocalStorageService {
         id: 1,
         name: "Daniel",
         prenom: "Georgette Ivan",
+        identifiant: "Daniel",
         password: "1234"
       },
       {
         id: 2,
         name: "Desire",
         prenom: "Elec tride",
-        password: "1234"
+        password: "1234",
+        identifiant: "Daniel",
       },
       {
         id: 3,
         name: "Raissa",
         prenom: "Loic derser",
-        password: "1234"
+        password: "1234",
+        identifiant: "Daniel",
       },
       {
         id: 4,
         name: "Michael",
         prenom: "Ouattara Frack",
-        password: "1234"
+        password: "1234",
+        identifiant: "Daniel",
       },
     ]
 
