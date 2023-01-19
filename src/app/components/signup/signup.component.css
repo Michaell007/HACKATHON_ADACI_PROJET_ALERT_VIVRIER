@@ -1,0 +1,42 @@
+
+
+html,body{
+  color:#15C705;
+
+
+}
+.lni{
+  font-size: 64px;
+}
+
+.bg{
+  background: linear-gradient(to right, #15C705 0%, #15C705 100%) !important;
+}
+
+.regform{
+  box-shadow: 0px 8px 9px 0px rgba(69, 69, 69, 0.25);
+}
+
+.sign{
+  color: #000;
+}
+
+
+html,body{
+  color: #fff;
+}
+.lni{
+  font-size: 64px;
+}
+
+.bg{
+  background: linear-gradient(to right, #15C705 0%, #15C705 100%) !important;
+}
+
+.regform{
+  box-shadow: 0px 8px 9px 0px rgba(69, 69, 69, 0.25);
+}
+
+.sign{
+  color: #000;
+}
