@@ -10,20 +10,15 @@ import { LocalStorageService } from './services/local-storage.service';
 export class AppComponent implements OnInit{
   title = 'ALERT VIVRIER';
 
-  loginForm = this.fb.group({
-    email: ['', [Validators.required, Validators.email] ],
-    password: ['', Validators.required],
-  })
+  // loginForm = this.fb.group({
+  //   email: ['', [Validators.required, Validators.email] ],
+  //   password: ['', Validators.required],
+  // })
 
   constructor(private fb: FormBuilder, private localStorageService: LocalStorageService) {}
 
   ngOnInit(): void {
     this.localStorageService.initialisationDefaultsUsersDatas();
   }
-
-  onSubmit() {
-    console.log( this.loginForm.value, this.loginForm.valid )
-  }
-
 
 }
