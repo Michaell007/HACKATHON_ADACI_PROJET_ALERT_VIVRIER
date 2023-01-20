@@ -3,8 +3,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="profile-img">
-                    <img src="https://www.landmark-maps.com/wp-content/uploads/2021/11/avatar-woman.png"
-                        alt="" />
+                    <img src="https://www.landmark-maps.com/wp-content/uploads/2021/11/avatar-woman.png" alt="" />
                     <div class="file btn btn-lg btn-primary">
                         Change ma photo
                         <input type="file" name="file" />
@@ -33,9 +32,10 @@
                 </div>
             </div>
             <div style="margin-top: 15px;" class="col-md-2">
-                <input style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Modifier" />
+                <input style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore"
+                    value="Modifier" />
             </div>
-            
+
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -49,7 +49,7 @@
                     <a href="">Responsable de coopérative </a><br /> -->
                 </div>
             </div>
-            
+
             <div class="col-md-8">
                 <div class="tab-content profile-tab" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -101,9 +101,11 @@
                                 <label>Article</label>
                             </div>
                             <div class="col-md-6">
-                                <select (change)="onClickArticle($event)" class="form-control" id="exampleFormControlSelect1">
-                                    <option *ngFor="let product of allProducts" [value]="product">{{ product.name }}</option>
-                                  </select>
+                                <select (change)="onClickArticle($event)" class="form-control"
+                                    id="exampleFormControlSelect1">
+                                    <option *ngFor="let product of allProducts" [value]="product">{{ product.name }}
+                                    </option>
+                                </select>
                             </div>
                         </div>
 
@@ -113,12 +115,13 @@
                                 <label>Quantite </label>
                             </div>
                             <div class="col-md-6">
-                                <select (change)="onClickQuantite($event)" class="form-control" id="exampleFormControlSelect1">
+                                <select (change)="onClickQuantite($event)" class="form-control"
+                                    id="exampleFormControlSelect1">
                                     <option value="1">1KG</option>
                                     <option value="3">3KG</option>
                                     <option value="5">5KG</option>
                                     <option value="15">15KG</option>
-                                  </select>
+                                </select>
                             </div>
                         </div>
 
@@ -128,25 +131,31 @@
                                 <label>Prix par Kilo</label>
                             </div>
                             <div class="col-md-6">
-                                <select (click)="onClickPrix($event)" class="form-control" id="exampleFormControlSelect1">
+                                <select (click)="onClickPrix($event)" class="form-control"
+                                    id="exampleFormControlSelect1">
                                     <option value="100">100 Fcfa</option>
                                     <option value="350">350 Fcfa</option>
                                     <option value="500">500 Fcfa</option>
                                     <option value="510">510 Fcfa</option>
-                                  </select>
+                                </select>
                             </div>
                         </div>
 
                         <div style="margin-top: 15px;" class="row">
-                            <input (click)="onPublierStock()" style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Publier" />
+                            <input (click)="onPublierStock()" style="background-color: #FABB0F;" type="submit"
+                                class="profile-edit-btn" name="btnAddMore" value="Publier" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div style="margin-top: 15px;" class="col-md-4">
-                <input (click)="gotoAccueil()" style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Revenir à la page d'accueil" />
+            <div style="margin-top: 15px; text-align: center;" class="col-md-4">
+                <input  (click)="gotoAccueil()" style="background-color: #FABB0F; margin-bottom: 10px;" type="submit" class="profile-edit-btn"
+                    name="btnAddMore" value="Revenir à la page d'accueil" />
+                    <input (click)="onDeconnecter()" style="background-color: rgb(182, 21, 21); color: white;" type="submit" class="profile-edit-btn"
+                    name="btnAddMore" value="Se déconnecter" />
             </div>
+            
 
         </div>
     </form>
