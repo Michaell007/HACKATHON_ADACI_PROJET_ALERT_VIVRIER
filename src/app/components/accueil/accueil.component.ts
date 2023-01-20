@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Stock } from 'src/app/models/stock';
-import { FormBuilder, Validators, FormGroup  } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
 import { Product } from 'src/app/models/product';
 import { Commande } from 'src/app/models/commande';
@@ -14,6 +14,7 @@ import { Commande } from 'src/app/models/commande';
 export class AccueilComponent implements OnInit {
   stocks: Stock[] = [];
   itemCommande!: Commande;
+  isAuth = false;
 
   selectNameProduct = "-";
   selectPrixProduct = 0;
@@ -30,6 +31,7 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit(): void {
     this.stocks = this.localStorageService.getLocalStorage("stocks");
+    this.isAuth = this.localStorageService.getLocalStorage("isAuth") ? true : false;
   }
 
   gotoLogin() {
@@ -55,11 +57,11 @@ export class AccueilComponent implements OnInit {
   }
 
   onCommander() {
-    this.montantState = this.selectPrixProduct*this.selectPrixProduct
+    this.montantState = this.selectPrixProduct * this.selectPrixProduct
   }
 
   onCalcul() {
-    this.montantState = Number(this.commandeForm.value.quantite)*this.selectPrixProduct;
+    this.montantState = Number(this.commandeForm.value.quantite) * this.selectPrixProduct;
   }
 
 }
