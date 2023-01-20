@@ -19,10 +19,6 @@ import { DashbordVendorComponent } from './components/dashbord-vendor/dashbord-v
     DashboardComponent,
     SignupComponent,
     DashbordVendorComponent,
-
-
-
-
   ],
   imports: [
     BrowserModule,

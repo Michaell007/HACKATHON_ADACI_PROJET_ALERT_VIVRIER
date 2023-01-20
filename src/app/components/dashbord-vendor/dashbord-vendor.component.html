@@ -101,12 +101,8 @@
                                 <label>Article</label>
                             </div>
                             <div class="col-md-6">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>Choisir l'article</option>
-                                    <option>Banane</option>
-                                    <option>Manioc</option>
-                                    <option>Tomate</option>
-                                    <option>Igname</option>
+                                <select (change)="onClickArticle($event)" class="form-control" id="exampleFormControlSelect1">
+                                    <option *ngFor="let product of allProducts" [value]="product">{{ product.name }}</option>
                                   </select>
                             </div>
                         </div>
@@ -117,12 +113,11 @@
                                 <label>Quantite </label>
                             </div>
                             <div class="col-md-6">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>Choisir l'article</option>
-                                    <option>1KG</option>
-                                    <option>3KG</option>
-                                    <option>5KG</option>
-                                    <option>15KG</option>
+                                <select (change)="onClickQuantite($event)" class="form-control" id="exampleFormControlSelect1">
+                                    <option value="1">1KG</option>
+                                    <option value="3">3KG</option>
+                                    <option value="5">5KG</option>
+                                    <option value="15">15KG</option>
                                   </select>
                             </div>
                         </div>
@@ -133,18 +128,17 @@
                                 <label>Prix par Kilo</label>
                             </div>
                             <div class="col-md-6">
-                                <select class="form-control" id="exampleFormControlSelect1">
-                                    <option>Choisir le prix</option>
-                                    <option>100 Fcfa</option>
-                                    <option>350 Fcfa</option>
-                                    <option>500 Fcfa</option>
-                                    <option>510 Fcfa</option>
+                                <select (click)="onClickPrix($event)" class="form-control" id="exampleFormControlSelect1">
+                                    <option value="100">100 Fcfa</option>
+                                    <option value="350">350 Fcfa</option>
+                                    <option value="500">500 Fcfa</option>
+                                    <option value="510">510 Fcfa</option>
                                   </select>
                             </div>
                         </div>
 
                         <div style="margin-top: 15px;" class="row">
-                            <input style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Publier" />
+                            <input (click)="onPublierStock()" style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Publier" />
                         </div>
                     </div>
                 </div>
