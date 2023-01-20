@@ -1,0 +1,159 @@
+<div class="container emp-profile">
+    <form method="post">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="https://www.landmark-maps.com/wp-content/uploads/2021/11/avatar-woman.png"
+                        alt="" />
+                    <div class="file btn btn-lg btn-primary">
+                        Change ma photo
+                        <input type="file" name="file" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>
+                        Nadia Yves
+                    </h5>
+                    <h6>
+                        Developpeur Web
+                    </h6>
+                    <p class="proile-rating">MONTANT TOTAL : <span>450 050 Fcfa</span></p>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Infos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Ajouter un nouveau stock</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="margin-top: 15px;" class="col-md-2">
+                <input style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Modifier" />
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-work">
+                    <!-- <p>Reseaux SOCIAUX</p>
+                    <a href="">Facebook Lien</a><br />
+                    <a href="">Bootsnipp Lien</a><br />
+                    <a href="">LinkedIn Lien</a>
+                    <p>PROFESSION</p>
+                    <a href="">Secretaire</a><br />
+                    <a href="">Responsable de coopérative </a><br /> -->
+                </div>
+            </div>
+            
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Identifiant</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Kshiti123</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Nom</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Nadia G</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Email</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>nadia@atos.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Contact</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>123 456 7890</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Profession</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Secretaire</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Article</label>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Choisir l'article</option>
+                                    <option>Banane</option>
+                                    <option>Manioc</option>
+                                    <option>Tomate</option>
+                                    <option>Igname</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Quantite </label>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Choisir l'article</option>
+                                    <option>1KG</option>
+                                    <option>3KG</option>
+                                    <option>5KG</option>
+                                    <option>15KG</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Prix par Kilo</label>
+                            </div>
+                            <div class="col-md-6">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Choisir le prix</option>
+                                    <option>100 Fcfa</option>
+                                    <option>350 Fcfa</option>
+                                    <option>500 Fcfa</option>
+                                    <option>510 Fcfa</option>
+                                  </select>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 15px;" class="row">
+                            <input style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Publier" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 15px;" class="col-md-4">
+                <input (click)="gotoAccueil()" style="background-color: #FABB0F;" type="submit" class="profile-edit-btn" name="btnAddMore" value="Revenir à la page d'accueil" />
+            </div>
+
+        </div>
+    </form>
+</div>

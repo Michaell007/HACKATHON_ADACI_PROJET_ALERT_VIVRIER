@@ -8,7 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './components/signup/signup.component';
-
+import { DashbordVendorComponent } from './components/dashbord-vendor/dashbord-vendor.component';
 
 
 @NgModule({
@@ -18,6 +18,7 @@ import { SignupComponent } from './components/signup/signup.component';
     LoginComponent,
     DashboardComponent,
     SignupComponent,
+    DashbordVendorComponent,
 
 
 

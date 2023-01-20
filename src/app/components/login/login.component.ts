@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
         this.localStorageService.setLocalStorage("isAuth", true);
 
         // redirection vers page admin
-        this.router.navigate(['']);
+        this.router.navigate(['dashboard-vendor']);
       } else {
         console.log( this.loginForm.value )
         this.isSubmit = true;
