@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup  } from '@angular/forms';
+import { Router } from '@angular/router';
 import { User } from 'src/app/models/user';
 import { AuthService } from 'src/app/services/auth.service';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
@@ -16,10 +17,11 @@ export class LoginComponent implements OnInit {
     password: ['', Validators.required],
   })
 
-  constructor(private fb: FormBuilder, private authService: AuthService, private localStorageService: LocalStorageService) { }
+  constructor(private fb: FormBuilder, private authService: AuthService, private localStorageService: LocalStorageService,
+    private router: Router) { }
 
   userConnected?: User;
-  isSubmit = true;
+  isSubmit = false;
 
   onSubmit() {
 
@@ -31,11 +33,12 @@ export class LoginComponent implements OnInit {
         this.localStorageService.setLocalStorage("isAuth", true);
 
         // redirection vers page admin
+        this.router.navigate(['']);
       } else {
-        this.isSubmit = false;
+        console.log( this.loginForm.value )
+        this.isSubmit = true;
       }
     }
-
   }
 
   ngOnInit(): void {
