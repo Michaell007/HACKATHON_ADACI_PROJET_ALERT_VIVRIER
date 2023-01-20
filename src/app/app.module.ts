@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './components/signup/signup.component';
+import { ValidadminComponent } from './components/validadmin/validadmin.component';
 
 
 
@@ -18,6 +19,7 @@ import { SignupComponent } from './components/signup/signup.component';
     LoginComponent,
     DashboardComponent,
     SignupComponent,
+    ValidadminComponent,
 
 
 
