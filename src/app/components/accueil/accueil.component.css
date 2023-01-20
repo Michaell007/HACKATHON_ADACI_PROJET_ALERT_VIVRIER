@@ -7,6 +7,12 @@
     padding-top: 10px;
     padding-right: 50px;
     display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.height-img {
+  height: 163px;
 }
 
 .row2 {
@@ -327,133 +333,8 @@ body {
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 70
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    rem;
+    height: 70rem;
   }
-  
   
   
   /* MARKETING CONTENT

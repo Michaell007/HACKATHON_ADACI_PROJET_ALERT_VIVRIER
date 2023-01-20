@@ -9,8 +9,6 @@ import { LocalStorageService } from './local-storage.service';
 })
 export class AuthService {
 
-   
-
   constructor(private locaolStorageService: LocalStorageService) { }
 
   login(identifiant: string, password: string) {

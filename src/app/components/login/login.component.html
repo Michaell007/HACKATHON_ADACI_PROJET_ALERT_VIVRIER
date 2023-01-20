@@ -2,30 +2,52 @@
     <h3 class="text-center text-white pt-5"></h3>
     <div class="container">
         <div id="login-row" class="row justify-content-center align-items-center">
-            <div id="login-column" class="col-md-6">
-                <div id="login-box" class="col-md-12">
-                    <form id="login-form" class="form" method="post" (ngSubmit)="onSubmit()" [formGroup]="loginForm">
-                        <h3 class="text-center text-info">Login</h3>
-                        <div class="form-group">
-                            <label for="username" class="text-info">Identifiant:</label><br>
-                            <input type="text" formControlName="identifiant" id="username" class="form-control"
-                                placeholder="votre identifiant">
+
+            <div class="container h-100">
+                <div class="d-flex justify-content-center h-100">
+                    <div class="user_card">
+                        <div class="d-flex justify-content-center">
+                            <div class="brand_logo_container">
+                                <img src="../../../assets/img/login-img.jpg" class="brand_logo" alt="Logo">
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="password" class="text-info">Mot de passe:</label><br>
-                            <input type="text" formControlName="password" id="password" class="form-control"
-                                placeholder="Mot de passe">
+                        <div class="d-flex justify-content-center form_container">
+
+                            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" id="identifiant" formControlName="identifiant" class="form-control input_user"
+                                        placeholder="Identifiant">
+                                </div>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                    </div>
+                                    <input type="password" id="password" formControlName="password" class="form-control input_pass"
+                                        placeholder="password">
+                                </div>
+
+                                <div *ngIf="isSubmit">
+                                    <small class="form-text text-muted">Mot de passe incorrect.</small>
+                                </div>
+                                
+                                <div class="d-flex justify-content-center mt-3 login_container">
+                                    <button type="submit" name="button" class="btn login_btn">Se connecter</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="form-group"><br>
-                            <input type="submit" name="submit" class="btn btn-info btn-md" value="Se connecter">
+
+                        <div class="mt-4">
+                            <div class="d-flex justify-content-center links">
+                                <a style="color: white;" href="#">Page Accueil</a>
+                            </div>
                         </div>
-                        <div [class.cache]="isSubmit" id="register-link" class="text-left">
-                            <label class="text-danger">Identifiant ou mot de passe incorrect !</label>
-                        </div>
-                        
-                    </form>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
