@@ -20,7 +20,7 @@
                     </button>
                 </div>
             </div>
-            <div class="cart largenav col-sm-1">
+            <div *ngIf="!isAuth" class="cart largenav col-sm-1">
                 <a (click)="gotoLogin()" class="cart-button">
                     <h4>connexion</h4>
                 </a>
