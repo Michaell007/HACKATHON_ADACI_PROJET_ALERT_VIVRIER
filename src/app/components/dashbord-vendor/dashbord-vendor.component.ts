@@ -32,6 +32,11 @@ export class DashbordVendorComponent implements OnInit {
     this.router.navigate(['']);
   }
 
+  onDeconnecter() {
+    this.storageService.deleteLocalStorage("isAuth");
+    this.router.navigate(['']);
+  }
+
   onClickPrix(e: any) {
     this.myPrix = e.target.value;
   }
